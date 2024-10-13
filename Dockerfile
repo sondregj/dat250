@@ -1,4 +1,4 @@
-FROM eclipse-temurin:21-jdk as builder
+FROM eclipse-temurin:21-jdk AS builder
 WORKDIR /app
 COPY build.gradle.kts settings.gradle.kts gradlew ./
 COPY gradle gradle
