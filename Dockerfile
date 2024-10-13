@@ -11,4 +11,5 @@ WORKDIR /app
 USER 1001
 
 COPY --from=builder /app/build/libs/*.jar app.jar
-ENTRYPOINT ["java", "-jar", "app.jar", "--server.port=8080"]
+ENTRYPOINT ["java"]
+CMD ["-jar", "app.jar", "--server.port=8080"]
